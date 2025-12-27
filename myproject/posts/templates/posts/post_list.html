@@ -10,6 +10,7 @@
 
     {% for post in posts %}
         <article class="post">
+            <img class="banner" src="{{post.banner.url}}" alt="{{post.title}}">
             <h2>{{ post.title}}</h2>
             <p>{{ post.date}}</p>
             <p>{{ post.body}}</p>
